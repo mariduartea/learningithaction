@@ -16,7 +16,6 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
-      - uses: actions/upload-artifact@v4
         continue-on-error: true
       
       - name: Upload Failed Cypress Screenshots
