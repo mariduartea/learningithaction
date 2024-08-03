@@ -19,3 +19,4 @@ jobs:
           lhci autorun --disable-network-throttling --disable-cpu-throttling
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LIGHTHOUSE_CHECK_ACCESS_TOKEN }}
+          uploadArtifacts: true # save results as an action artifacts
