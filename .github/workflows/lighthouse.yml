@@ -16,7 +16,6 @@ jobs:
       - name: Run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.13.x
-          lhci autorun --disable-network-throttling --disable-cpu-throttling
+          lhci autorun --disable-network-throttling --disable-cpu-throttling --report=report
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LIGHTHOUSE_CHECK_ACCESS_TOKEN }}
-          uploadArtifacts: true # save results as an action artifacts
